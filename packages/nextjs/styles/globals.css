@@ -1,0 +1,87 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./fonts.css";
+
+:root,
+[data-theme] {
+  background: oklch(var(--b2));
+}
+
+:root {
+  --font-primary: "SF Pro Display", sans-serif;
+  --font-secondary: "SF Pro Rounded", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.sf-rounded {
+  font-family: var(--font-secondary) !important;
+}
+
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.btn {
+  @apply shadow-md;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
+
+.btn-shadow {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ededed 0%, #f9fcff 53%);
+  padding: 5px;
+}
+
+.btn-default {
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #f3f3f3 0%, #fff 100%);
+  box-shadow:
+    0px 0px 2.5px 0px rgba(0, 0, 0, 0.34),
+    0px -5px 4px 0px rgba(240, 240, 240, 0.8) inset;
+}
+
+.btn-primary {
+  border-radius: 12px;
+  border: 2px solid #a089ff;
+  background: linear-gradient(180deg, #7e5dff 0%, #997fff 100%);
+  box-shadow:
+    0px 0px 2.5px 0px rgba(0, 0, 0, 0.34),
+    0px -5px 4px 0px #8e75ef inset;
+  color: #fff;
+}
+
+.modal-shadow {
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #ededed;
+  backdrop-filter: blur(17.450000762939453px);
+}
+
+.bg-reclaim-verify {
+  border-radius: 0px 0px 16px 16px;
+  background: linear-gradient(180deg, #fff 0%, #e5e5e5 100%);
+  box-shadow:
+    0px -3px 5.6px 0px rgba(0, 0, 0, 0.14) inset,
+    0px 0px 46.8px 0px rgba(46, 46, 46, 0.13);
+}
+
+.search-box {
+  border-radius: 13px;
+  border: 1px solid #d8d4ff;
+  background: linear-gradient(90deg, #c4e1ff 0%, #a7aaff 100%);
+  backdrop-filter: blur(17.450000762939453px);
+  padding: 4px 6px 4px 4px;
+}
+
+.bg-search-box {
+  background: oklch(0.98 0.01 262.02);
+}
