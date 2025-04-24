@@ -58,6 +58,13 @@ const Home: NextPage = () => {
     setTheme("light");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    fetch("/api")
+      .then(res => res.json())
+      .then(data => {
+        console.log("All environment variables:", data);
+      });
+  }, []);
 
   return (
     <div className=" relative h-full flex flex-col justify-center flex-1">
