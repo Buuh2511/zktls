@@ -12,9 +12,9 @@ interface Props {
 }
 
 const schemaMap: Record<VerificationType, string> = {
-  UNVERIFIED: "a438fe6fcf084dff912c69525966d37d",
-  VERIFIED: "08d2067f3f1d4e639d75cf51ea749a3b",
-  PERFORMANCE: "b299bdd4ea314f059a2e415b9b10680f",
+  UNVERIFIED: "d791024a8e794fa8b13212d403e1b386",
+  VERIFIED: "da000ad4d40845b983bc15df33804dfa",
+  PERFORMANCE: "71b39a74aa924a6cb862764812010e76",
 };
 
 export const ZkPass = ({ verificationType }: Props) => {
